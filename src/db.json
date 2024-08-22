@@ -1,0 +1,74 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "name": "Pervin",
+      "surname": "Ehmedov",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "name": "Rufet",
+      "surname": "Rehmetov",
+      "role": "user"
+    }
+  ],
+  "listdata": [
+    {
+      "id": 1,
+      "name": "E-commerce Platform Optimization",
+      "nameimage": "https://spruko.com/demo/xintra/dist/assets/images/company-logos/3.png",
+      "desc": "Build an advanced analytics dashboard integrating real-time data from multiple sources.",
+      "teamimg1": "https://spruko.com/demo/xintra/dist/assets/images/faces/7.jpg",
+      "teamimg2": "https://spruko.com/demo/xintra/dist/assets/images/faces/5.jpg",
+      "teamimg3": "https://spruko.com/demo/xintra/dist/assets/images/faces/12.jpg",
+      "teamimg4": "https://spruko.com/demo/xintra/dist/assets/images/faces/6.jpg",
+      "assigneddate": "15, Jun 2024",
+      "duedata": "30, Aug 2024",
+      "status": "65",
+      "priority": "Low"
+    },
+    {
+      "id": 2,
+      "name": "AI-Powered Customer Support System",
+      "nameimage": "https://spruko.com/demo/xintra/dist/assets/images/company-logos/8.png",
+      "desc": "Build an advanced analytics dashboard integrating real-time data from multiple sources.",
+      "teamimg1": "https://spruko.com/demo/xintra/dist/assets/images/faces/7.jpg",
+      "teamimg2": "https://spruko.com/demo/xintra/dist/assets/images/faces/5.jpg",
+      "teamimg3": "https://spruko.com/demo/xintra/dist/assets/images/faces/12.jpg",
+      "teamimg4": "https://spruko.com/demo/xintra/dist/assets/images/faces/6.jpg",
+      "assigneddate": "15, Jun 2024",
+      "duedata": "30, Aug 2024",
+      "status": "65",
+      "priority": "Hight"
+    },
+    {
+      "id": 1,
+      "name": "Data Migration to Cloud",
+      "nameimage": "https://spruko.com/demo/xintra/dist/assets/images/company-logos/7.png",
+      "desc": "Build an advanced analytics dashboard integrating real-time data from multiple sources.",
+      "teamimg1": "https://spruko.com/demo/xintra/dist/assets/images/faces/7.jpg",
+      "teamimg2": "https://spruko.com/demo/xintra/dist/assets/images/faces/5.jpg",
+      "teamimg3": "https://spruko.com/demo/xintra/dist/assets/images/faces/12.jpg",
+      "teamimg4": "https://spruko.com/demo/xintra/dist/assets/images/faces/6.jpg",
+      "assigneddate": "15, Jun 2024",
+      "duedata": "30, Aug 2024",
+      "status": "65",
+      "priority": "medium"
+    },
+    {
+      "id": 1,
+      "name": "Development of Enhanced Analytics Platform",
+      "nameimage": "https://spruko.com/demo/xintra/dist/assets/images/company-logos/1.png",
+      "desc": "Build an advanced analytics dashboard integrating real-time data from multiple sources.",
+      "teamimg1": "https://spruko.com/demo/xintra/dist/assets/images/faces/7.jpg",
+      "teamimg2": "https://spruko.com/demo/xintra/dist/assets/images/faces/5.jpg",
+      "teamimg3": "https://spruko.com/demo/xintra/dist/assets/images/faces/12.jpg",
+      "teamimg4": "https://spruko.com/demo/xintra/dist/assets/images/faces/6.jpg",
+      "assigneddate": "15, Jun 2024",
+      "duedata": "30, Aug 2024",
+      "status": "65",
+      "priority": "medium"
+    }
+  ]
+}
