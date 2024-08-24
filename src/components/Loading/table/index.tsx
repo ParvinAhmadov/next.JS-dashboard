@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useRequest, useRequestMutation } from "@/http/axiosFetcher";
 import Loading from "..";
 import axios from "axios";
+import { mutate } from "swr";
 
 const Table: FC<TableProps> = ({ columns = [], data: propsData = [] }) => {
   const { data, isLoading, error } = useRequest("listdata", {
@@ -11,14 +12,16 @@ const Table: FC<TableProps> = ({ columns = [], data: propsData = [] }) => {
     method: "GET",
   });
 
-  const { trigger: listdata } = useRequestMutation("listdata", {
+  const { trigger: deleteList } = useRequestMutation("listDelete", {
     method: "DELETE",
     module: "listApi",
   });
 
-  const handleDelete = async (id: string) => {
+  const handleDelete = async (id: number) => {
     try {
-      await listdata({ dynamicValue: id });
+      await deleteList({ dynamicValue: id });
+      mutate("listdata")
+      
     } catch (error) {
       console.error("Failed to delete the list", error);
     }
@@ -31,7 +34,7 @@ const Table: FC<TableProps> = ({ columns = [], data: propsData = [] }) => {
   //   if (editItem) {
   //     try {
   //       await editdata({ dynamicValue: editItem.id, body: editItem });
-  //       setEditItem(null); 
+  //       setEditItem(null);
   //     } catch (error) {
   //       console.error("Failed to update the list", error);
   //     }
@@ -262,7 +265,7 @@ const Table: FC<TableProps> = ({ columns = [], data: propsData = [] }) => {
                       </div>
                       <div className="text-[13px] flex items-center gap-1">
                         <span className="text-[#019FA2]">
-                          {row.status || "0%"}
+                          {row.status || "0"}
                         </span>
                         <span>Completed</span>
                       </div>

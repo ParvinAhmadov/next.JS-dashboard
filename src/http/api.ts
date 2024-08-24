@@ -5,6 +5,7 @@ export const api = {
     },
     listApi: {
         baseUrl: "http://localhost:3001",
-        listdata: "listdata"
+        listdata: "listdata",
+        listDelete: "listdata/{{id}}",
     }
 }
